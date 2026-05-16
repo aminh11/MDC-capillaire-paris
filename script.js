@@ -18,9 +18,9 @@ window.addEventListener("load", () => {
 
             preloader.style.display = "none";
 
-        }, 300);
+        }, 200);
 
-    }, 300);
+    }, 200);
 
 });
 
