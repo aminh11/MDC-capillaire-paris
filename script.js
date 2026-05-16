@@ -5,16 +5,22 @@
 /* PRELOADER */
 /* ========================================= */
 
-window.addEventListener('load', () => {
+window.addEventListener("load", () => {
+
+    const preloader =
+    document.getElementById("preloader");
 
     setTimeout(() => {
 
-        const preloader =
-        document.getElementById('preloader');
+        preloader.classList.add("hidden");
 
-        preloader.classList.add('hidden');
+        setTimeout(() => {
 
-    }, 1800);
+            preloader.style.display = "none";
+
+        }, 800);
+
+    }, 800);
 
 });
 
