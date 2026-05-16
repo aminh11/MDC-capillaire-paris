@@ -5,10 +5,25 @@
 /* PRELOADER */
 /* ========================================= */
 
+// =========================================
+/* PRELOADER */
+/* ========================================= */
+
 window.addEventListener("load", () => {
 
     const preloader =
     document.getElementById("preloader");
+
+    // MOBILE
+
+    if(window.innerWidth <= 768){
+
+        preloader.style.display = "none";
+
+        return;
+    }
+
+    // PC
 
     setTimeout(() => {
 
@@ -18,9 +33,9 @@ window.addEventListener("load", () => {
 
             preloader.style.display = "none";
 
-        }, 200);
+        }, 300);
 
-    }, 200);
+    }, 300);
 
 });
 
