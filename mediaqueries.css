@@ -123,6 +123,17 @@
 
         gap:16px;
     }
+    @media(max-width:768px){
+
+    .service-card img,
+    .shop-card img{
+
+        height:auto;
+
+        object-fit:contain;
+    }
+
+}
 
     .hero-buttons .btn{
 
