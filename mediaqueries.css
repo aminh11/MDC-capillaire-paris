@@ -115,34 +115,43 @@
         line-height:1.7;
     }
 
-    .hero-buttons{
+/* HERO BUTTONS */
 
-        flex-direction:column;
+.hero-buttons{
 
-        align-items:center;
+    flex-direction:column;
 
-        gap:16px;
-    }
-    @media(max-width:768px){
+    align-items:center;
 
-    .service-card img,
-    .shop-card img{
-
-        height:auto;
-
-        object-fit:contain;
-    }
-
+    gap:16px;
 }
 
-    .hero-buttons .btn{
+.hero-buttons .btn{
 
-        width:100%;
+    width:100%;
 
-        max-width:300px;
+    max-width:300px;
 
-        text-align:center;
-    }
+    text-align:center;
+}
+
+
+/* IMAGES MOBILE */
+
+.service-card img,
+.shop-card img,
+.formation-card img{
+
+    width:100%;
+
+    height:auto !important;
+
+    object-fit:contain !important;
+
+    display:block;
+
+    border-radius:20px;
+}
 
     .hero-stats{
 
@@ -152,6 +161,30 @@
 
         gap:20px;
     }
+
+    /* ========================================= */
+/* IMAGE FIX IPHONE */
+/* ========================================= */
+
+@media(max-width:768px){
+
+    .service-card,
+    .shop-card,
+    .formation-card{
+
+        overflow:hidden;
+    }
+
+    .service-card img,
+    .shop-card img,
+    .formation-card img{
+
+        max-height:none !important;
+
+        object-fit:contain !important;
+    }
+
+}
 
     /* GRIDS */
 
