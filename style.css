@@ -267,37 +267,7 @@ body{
     z-index:-1;
 }
 
-/* CURSOR */
 
-.cursor{
-
-    width:8px;
-    height:8px;
-
-    background:var(--pink-dark);
-
-    border-radius:50%;
-
-    position:fixed;
-    z-index:9999;
-
-    pointer-events:none;
-}
-
-.cursor-follower{
-
-    width:40px;
-    height:40px;
-
-    border:1px solid var(--pink-dark);
-
-    border-radius:50%;
-
-    position:fixed;
-    z-index:9998;
-
-    pointer-events:none;
-}
 
 /* CONTAINER */
 
